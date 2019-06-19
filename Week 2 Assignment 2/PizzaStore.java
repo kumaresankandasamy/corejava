@@ -4,7 +4,7 @@ public class PizzaStore{
 	private String sides;
 	private int price;
 	private double discount;
-	private String offers;
+	public String offers;
 
 	public PizzaStore(String crust,String toppings,String sides,String offers){
 		crust = this.crust;
@@ -71,7 +71,7 @@ public class PizzaStore{
 		
 		return price;
 	}
-	private int totalPrice(String offers){
+	public int totalPrice(String offers){
 	int crustTotal	= PizzaStore.crustPrice(crust);
 	int toppingTotal	= PizzaStore.toppingsPrice(toppings);
 	int sidesTotal	= PizzaStore.sidesPrice(sides);
@@ -86,11 +86,6 @@ public class PizzaStore{
 	
 	return total;
     }
-    public static void main(String[] args) {
-    	PizzaStore pizza = new PizzaStore("Thin Crust","Paneer","Wedges"," ");
-    	int Total = pizza.totalPrice(pizza.offers);
-    	System.out.println("Total price: "+Total);
-		
-	}
+    
 
 }
