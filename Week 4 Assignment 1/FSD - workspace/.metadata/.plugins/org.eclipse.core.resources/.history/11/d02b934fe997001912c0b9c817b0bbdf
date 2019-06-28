@@ -1,0 +1,22 @@
+package com.week4.restaurant.model;
+
+public class Order {
+	int id;
+	String name;
+	enum dishType{
+		Veg,
+		Non_Veg
+	}
+	double calories;
+	double price;
+	public Order(int id, String name, double calories, double price) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.calories = calories;
+		this.price = price;
+	}
+	
+	
+	
+}

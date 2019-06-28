@@ -1,0 +1,19 @@
+package com.week4.restaurant.model;
+
+public class Dish {
+	int id;
+	String name;
+	enum dishType{
+		Veg,
+		Non_Veg
+	}
+	double calories;
+	double price;
+	
+
+
+public static void main(String[] args) {
+	
+	
+}
+}

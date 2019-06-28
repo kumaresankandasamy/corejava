@@ -1,0 +1,16 @@
+package com.week4.restaurant.controller;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Comparator;
+import java.util.Iterator;
+import com.week4.restaurant.model.Dish;
+import com.week4.restaurant.model.Dishtype;
+
+
+public class Restaurent {
+	public static void main(String[] args) {
+		Dish dish1 = new Dish("")
+	}
+
+}
