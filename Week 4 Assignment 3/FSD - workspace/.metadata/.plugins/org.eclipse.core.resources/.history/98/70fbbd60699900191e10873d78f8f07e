@@ -1,0 +1,20 @@
+package com.week4.restaurant.controller;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Comparator;
+import java.util.Iterator;
+import com.week4.restaurant.model.Dish;
+import com.week4.restaurant.model.Dishtype;
+
+
+public class Restaurent {
+	public static void main(String[] args) {
+		Dish dish1 = new Dish(1,"Chicken_Briyani",Dishtype.Non_Veg,150.0,200.0);
+		Dish dish2 = new Dish(2,"Briyani",Dishtype.Non_Veg,170.0,250.0);
+		
+		List<Dish> dish = new ArrayList<>();
+	}
+	
+
+}

@@ -1,0 +1,82 @@
+package com.week4.restaurant.controller;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.List;
+
+import com.week4.restaurant.model.Dish;
+import com.week4.restaurant.model.Dishtype;
+
+
+public class Restaurent {
+	public static void main(String[] args) {
+		
+		Dish dish1 = new Dish(1,"Neer-Dosa",Dishtype.Non_Veg, 50.00, 100.0);
+		Dish dish2 = new Dish(2,"Idli-Vada",Dishtype.Non_Veg, 40.00, 200.0);
+		Dish dish3 = new Dish(2,"Roti-Curry",Dishtype.Non_Veg, 100.00, 250.0);
+		Dish dish4 = new Dish(4,"Dosa",Dishtype.Non_Veg, 50.00, 300.0);
+		Dish dish5 = new Dish(5," Pulav",Dishtype.Non_Veg, 80.00, 330.0);
+		
+		List<Dish> dish = new ArrayList<>();
+		dish.add(dish1);
+		dish.add(dish2);
+		dish.add(dish3);
+		dish.add(dish4);
+		dish.add(dish5);
+		
+		
+		System.out.println("=================Welcome=====================");
+		System.out.println("Please choose from the below options ");
+		
+		System.out.println(" 1 => Dish Id:1, name: Neer-Dosa, Price: 50.00  Calories: 100");
+		System.out.println("2 => Dish Id:2, name: Idli-Vada, Price: 40.00  Calories: 200");
+		System.out.println("3 => Dish Id:3, name: Roti-Curry, Price: 100.00  Calories: 250");
+		System.out.println("4 => Dish Id:4, name: Dosa, Price: 50.00  Calories: 300 ");
+		System.out.println("5 => Dish Id:5, name: Pulav, Price: 80.00  Calories: 330");
+		
+		System.out.println("===============================================");
+		
+		Comparator<Dish> incresOrderCal = (d1,d2) -> Double.valueOf(d1.getCalories()).compareTo(d2.getCalories());
+		Comparator<Dish> decresOrderCal = (d1,d2) -> Double.valueOf(d2.getCalories()).compareTo(dish1.getCalories());
+		Comparator<Dish> incresOrderPrice = (d1,d2) -> Double.valueOf(d1.getPrice()).compareTo(d2.getPrice());
+		Comparator<Dish> decresOrderPrice = (d1,d2) -> Double.valueOf(d2.getPrice()).compareTo(d1.getPrice());
+		
+		
+		
+		Scanner sc = new Scanner(System.in);
+		int option = sc.nextInt();
+		sc.close();
+		switch(option) {
+		case 1:
+			
+			dish.sort(incresOrderCal);
+			break;
+		case 2:
+			dish.sort(decresOrderCal);
+			break;
+		case 3:
+			dish.sort(incresOrderPrice);
+			break;
+		case 4:
+			dish.sort(decresOrderPrice);
+			break;
+		default:
+			System.out.println("No options available");
+			break;
+		
+			
+		}
+		sc.close();
+		Iterator<Dish> iterator = dish.iterator();
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
+		
+		
+		
+	}
+	
+
+}

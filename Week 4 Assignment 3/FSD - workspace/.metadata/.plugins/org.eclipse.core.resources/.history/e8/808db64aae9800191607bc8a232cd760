@@ -1,0 +1,14 @@
+package com.week4.restaurant.model;
+
+public class VegType {
+	enum dishType{
+		Veg,
+		Non_Veg
+	}
+	
+	public interface Sortdish{
+		enum sort();
+	}
+	
+
+}

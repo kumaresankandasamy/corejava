@@ -1,0 +1,16 @@
+package com.week4.restaurant.model;
+
+public class Dish {
+	private int id;
+	private String name;
+	private DishType dishType;
+	private double calories;
+	private double price;
+	
+
+
+public static void main(String[] args) {
+	
+	
+}
+}
