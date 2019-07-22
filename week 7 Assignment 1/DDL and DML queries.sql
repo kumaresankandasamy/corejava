@@ -48,3 +48,4 @@ insert into user values(3,'dhoni',100,200);
 insert into user values(4,'raina',100,200);
 insert into user values(5,'kholi',90,80);
 select * from user;
+show databases;
