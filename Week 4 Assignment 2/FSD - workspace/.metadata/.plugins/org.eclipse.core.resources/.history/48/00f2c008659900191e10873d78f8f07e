@@ -1,0 +1,50 @@
+package com.week4.restaurant.model;
+
+public class Dish {
+	private int id;
+	private String name;
+	private Dishtype dishtype;
+	private double calories;
+	private double price;
+	public Dish(int id, String name, Dishtype dishtype, double calories, double price) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.dishtype = dishtype;
+		this.calories = calories;
+		this.price = price;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Dishtype getDishtype() {
+		return dishtype;
+	}
+	public void setDishtype(Dishtype dishtype) {
+		this.dishtype = dishtype;
+	}
+	public double getCalories() {
+		return calories;
+	}
+	public void setCalories(double calories) {
+		this.calories = calories;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+
+
+}

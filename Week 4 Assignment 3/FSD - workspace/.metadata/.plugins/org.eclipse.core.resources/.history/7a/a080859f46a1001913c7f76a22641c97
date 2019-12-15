@@ -1,0 +1,11 @@
+package com.greatlearning.fsd.module4.exceptions.InvalidAmountException;
+
+public class InvalidAmountException throw Restaurent {
+try{
+	System.out.println("Amount paid is less than bill");
+}
+catch(Exception e){
+	
+	e.printStackTrace();
+}
+}
